@@ -64,7 +64,6 @@ def remove_watermark(input_video_path, output_video_path, is_portrait=None):
         if frame_count % 100 == 0:
             print(f"Processed {frame_count}/{total_frames} frames")
 
-        # Create mask
         mask = np.zeros((frame_height, frame_width), dtype=np.uint8)
 
         for region in regions:
