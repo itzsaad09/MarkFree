@@ -3,11 +3,13 @@
   "builds": [
     {
       "src": "api/index.py",
-      "use": "@vercel/python",
-      "config": { "maxLambdaSize": "200mb" }
+      "use": "@vercel/python"
     }
   ],
   "routes": [
-    { "src": "/(.*)", "dest": "api/index.py" }
+    {
+      "src": "/remove-watermark",
+      "dest": "api/index.py"
+    }
   ]
 }
