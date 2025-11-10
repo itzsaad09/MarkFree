@@ -8,10 +8,12 @@
     "scripting",
     "storage",
     "downloads",
-    "http://localhost:5000/*"
+    "http://localhost:5000/*",
+    "https://mark-free.vercel.app/*"
   ],
   "host_permissions": [
-    "http://localhost:5000/*"
+    "http://localhost:5000/*",
+    "https://mark-free.vercel.app/*"
   ],
   "action": {
     "default_icon": {
