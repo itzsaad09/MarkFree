@@ -45,6 +45,10 @@ def remove_watermark(input_path, output_path, regions):
     out.release()
     print(f"Processing complete: {frame_count} frames")
 
+@app.route('/')
+def home():
+    return "MarkFree backend is running! POST to /remove-watermark"
+
 @app.route('/remove-watermark', methods=['POST'])
 def remove_watermark_api():
     if 'video' not in request.files:

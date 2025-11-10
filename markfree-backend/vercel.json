@@ -8,7 +8,7 @@
   ],
   "routes": [
     {
-      "src": "/utils/remove-watermark",
+      "src": "/remove-watermark",
       "dest": "api/index.py"
     }
   ]
