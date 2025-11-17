@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+opencv-python-headless
+numpy
+moviepy
+pydub
+imageio-ffmpeg
+pillow
+lama-cleaner
+torch==2.0.1
+torchvision==0.15.2
+python-multipart

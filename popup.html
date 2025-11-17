@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MarkFree - Upload Video</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1>MarkFree</h1>
+  <p>Upload a video to remove watermarks from predefined positions.</p>
+  <input type="file" id="videoUpload" accept="video/*">
+  <div class="progress-container">
+    <div id="uploadProgress" class="progress-bar"></div>
+  </div>
+  <p id="uploadStatus">Status: Ready</p>
+  
+  <div class="video-preview">
+    <h3>Original Video</h3>
+    <video id="originalVideo" controls width="280"></video>
+  </div>
+  
+  <button id="removeWatermark" disabled>Remove Watermark</button>
+  <div class="progress-container">
+    <div id="removeProgress" class="progress-bar"></div>
+  </div>
+  <p id="removeStatus">Status: Waiting</p>
+  
+  <div class="video-preview">
+    <h3>Processed Video</h3>
+    <video id="processedVideo" controls width="280"></video>
+  </div>
+  
+  <button id="downloadVideo" disabled>Download Processed Video (WebM)</button>
+  
+  <script src="progress.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>
