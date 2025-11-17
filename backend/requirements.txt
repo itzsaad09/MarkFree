@@ -1,12 +1,10 @@
 fastapi
 uvicorn[standard]
-opencv-python-headless
-numpy
-moviepy
-pydub
-imageio-ffmpeg
-pillow
-lama-cleaner
 torch==2.9.1
 torchvision==0.24.1
+opencv-python-headless
+moviepy
+pillow
+lama-cleaner
+numpy
 python-multipart

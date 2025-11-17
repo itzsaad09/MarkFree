@@ -4,10 +4,18 @@
     {
       "src": "api/remove_watermark.py",
       "use": "@vercel/python",
-      "config": { "maxLambdaSize": "50mb" }
+      "config": {
+        "maxLambdaSize": "100mb",
+        "functions": {
+          "api/remove_watermark.py": {
+            "memory": 3008,
+            "maxDuration": 60
+          }
+        }
+      }
     }
   ],
   "routes": [
-    { "src": "/remove_watermark", "dest": "api/remove_watermark.py" }
+    { "src": "/(.*)", "dest": "api/remove_watermark.py" }
   ]
 }
